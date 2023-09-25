@@ -55,16 +55,16 @@ export default function Page({}: Props) {
 
   function handleOpenMobileMenu() {
     setTranslateX(0)
+    console.log('works')
   }
 
   const menuBgStyle = {
-    opacity: translateX == -100 ? '0' : '.7',
-    // pointerEvents: translateX == -100 ? 'none' : 'all',
+    opacity: translateX == -100 ? '0' : '.7'
   }
 
   return (<>
     <MobileMenu/>
-    <div className='mobile-menu-backdrop' style={menuBgStyle}></div>
+    <div className={translateX == -100 ? 'mobile-menu-backdrop pointer-events-none' : 'mobile-menu-backdrop pointer-events-all'} style={menuBgStyle}></div>
     <main className='home'>
       <div className='home__header'>
         <img src="/icons/hamburger.svg" alt="" onClick={handleOpenMobileMenu} width='50px'/>
