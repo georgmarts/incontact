@@ -30,3 +30,11 @@
     transition: opacity ease-in-out 300ms;
     z-index: 1;
 }
+
+.pointer-events-none {
+    pointer-events: none;
+}
+
+.pointer-events-all {
+    pointer-events: all;
+}
