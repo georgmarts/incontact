@@ -1,0 +1,59 @@
+@import '../styles/mixins';
+
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    @include shadow;
+    padding: 1rem;
+    p {
+        margin: 0;
+    }
+    &__user-card {
+        display: flex;
+        gap: 1rem;
+        font-family: 'VK-Sans-Medium';
+        align-self: flex-start;
+    }
+    &__date {
+        align-self: flex-start;
+        font-family: 'VK-Sans-Regular';
+        font-size: .7rem;
+    }
+    &__img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    &__title {
+        align-self: baseline;
+    }
+    &__body {
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        font-family: 'VK-Sans-Regular';
+        font-size: .875rem;
+        align-self: flex-start;
+    }
+    &__icons {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        align-self: baseline;
+        img {
+            cursor: pointer;
+        }
+        span {
+            margin-left: -1rem;
+            margin-bottom: -1rem;
+            font-size: .875rem;
+            color: grey;
+        }
+    }
+    
+}

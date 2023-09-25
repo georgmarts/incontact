@@ -1,0 +1,10 @@
+.post-page {
+    padding: 1rem;
+    &__header {
+        display: flex;
+        margin: 0 0 1rem 0;
+        img {
+            width: 30px;
+        }
+    }
+}

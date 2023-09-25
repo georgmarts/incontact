@@ -1,0 +1,31 @@
+.registration {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: max-content;
+    margin: 2rem auto;
+    padding: 2rem;
+    box-shadow: 1px 1px 3px -1px grey;
+}
+
+.users {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.users > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.users > div > img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}

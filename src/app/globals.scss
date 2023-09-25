@@ -1,0 +1,77 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+@font-face {
+    font-family: 'VK-Sans-Regular';
+    src: url('/fonts/VKSansDisplay-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'VK-Sans-Medium';
+    src: url('/fonts/VKSansDisplay-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'VK-Sans-DemiBold';
+    src: url('/fonts/VKSansDisplay-DemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'VK-Sans-Bold';
+    src: url('/fonts/VKSansDisplay-Bold.ttf');
+}
+
+html, body, #next {
+    height: 100% !important;
+    width: 100% !important;
+  }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'VK-Sans-Bold';
+    // font-family: 'Open Sans', sans-serif;
+    // font-family: 'Roboto', sans-serif;
+    // font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: 'VK-Sans-Regular';
+}
+
+.homepage {
+    position: absolute;
+    margin: auto;
+    inset: 0;
+    display: grid;
+    place-content: center;
+}
+
+// .parent {
+//     // position: relative;
+
+//     // display: flex;
+//     // flex-direction: column;
+//     // justify-content: flex-end;
+
+//     width: 300px;
+//     height: 300px;
+//     overflow-y: scroll;
+// }
+
+// .child {
+//     // position: absolute;
+//     // margin: auto;
+//     // bottom: 0;
+
+//     // flex-shrink: 0;
+
+//     width: 100%;
+//     height: 1000px;
+//     background-image: linear-gradient(red,orange);}

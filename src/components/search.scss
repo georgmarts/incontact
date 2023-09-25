@@ -1,0 +1,18 @@
+@use '../styles/colors';
+@import '../styles/mixins';
+
+.search {
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+    background-color: rgba(211, 211, 211, 0.3);
+    border-radius: .5rem;
+    input {
+        background-color: transparent;
+        border: none;
+        padding: .5rem 1rem;
+        &:focus {
+            outline: none;
+        }
+    }
+}
