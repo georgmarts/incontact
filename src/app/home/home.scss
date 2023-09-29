@@ -1,0 +1,23 @@
+@use '../../styles/colors';
+
+.home {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__friend-avatars {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        img {
+            border: 3px solid colors.$blue;
+        }
+    }
+}

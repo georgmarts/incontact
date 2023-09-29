@@ -1,0 +1,15 @@
+.header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: white;
+    top: 0;
+    z-index: 1;
+    img {
+        width: 50px;
+    }
+}
