@@ -1,0 +1,8 @@
+.messages {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-grow: 1;
+    gap: .5rem;
+    padding: 1rem;
+    overflow: scroll;
+}
