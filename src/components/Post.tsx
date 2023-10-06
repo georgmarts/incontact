@@ -36,13 +36,12 @@ export default function Post({post, user}: Props) {
   const editModalRef = useRef<HTMLDialogElement | null>(null)
 
   useEffect(() => {
-    fetchLikes()
     const interval = setInterval(() => {
       fetchLikes()
     }, 5000)
 
     return () => clearInterval(interval)
-  }, [post])
+  }, [])
 
   useEffect(() => {
     checkLike()
