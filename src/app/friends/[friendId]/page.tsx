@@ -16,6 +16,9 @@ export default function Page({params}: Props) {
     <main className="friend-page">
         <Notification/>
         <ShareModal/>
+        <Header>
+          <h3>Friend's wall</h3>
+        </Header>
         <FriendProfile friendId={friendId}/>
         <FriendPosts friendId={friendId}/>
     </main>
