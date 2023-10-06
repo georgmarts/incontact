@@ -19,6 +19,7 @@ export default function FriendPosts(props: Props) {
     const skeletonArray = Array.from({length: 5}, (v, i) => i)    
 
     useEffect(() => {
+        fetchPosts()
         const interval = setInterval(() => {
             fetchPosts()
         }, 5000)
