@@ -1,0 +1,24 @@
+.footer-menu {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    width: 100%;
+    height: 70px;
+    padding: 0 1rem;
+    background-color: white;
+    box-shadow: 0 0 3px -1px black;
+    a {
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 50px;
+            opacity: .7;
+        }
+    }
+
+}
