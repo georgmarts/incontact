@@ -42,7 +42,7 @@ export default function Post({post, user}: Props) {
     }, 5000)
 
     return () => clearInterval(interval)
-  }, [])
+  }, [post])
 
   useEffect(() => {
     checkLike()
