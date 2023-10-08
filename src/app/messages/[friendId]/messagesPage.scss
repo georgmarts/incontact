@@ -47,7 +47,7 @@
         box-shadow: 0 -1px 3px -1px lightgray;
         background-color: white;
         z-index: 1;
-        input {
+        input[type=text] {
             // flex-grow: 1;
             border-radius: .875rem;
             border: none;
