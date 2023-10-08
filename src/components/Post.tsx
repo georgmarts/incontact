@@ -51,7 +51,7 @@ export default function Post({post, user}: Props) {
   }, [])
 
   useEffect(() => {
-    fetchCommentsCount
+    fetchCommentsCount()
   }, [commentsCountUpdates])
 
   useEffect(() => {
@@ -82,9 +82,10 @@ export default function Post({post, user}: Props) {
   }
 
   async function fetchCommentsCount() {
-    const { count, error } = await supabase.from('SNComments').select('*', {count: 'exact'}).match({post: post.id})
-    if(count) {
-      setCommentsCount(count)
+    // const { count, error } = await supabase.from('SNComments').select('*', {count: 'exact'}).match({post: post.id})
+    const { data, error } = await supabase.from('SNComments').select().match({post: post.id})
+    if(data) {
+      setCommentsCount(data.length)
     }
     if(error) setNotification('Something went wrong.Try again')
   } 
@@ -184,7 +185,7 @@ export default function Post({post, user}: Props) {
           {likes.length > 0 && <span>{likes.length}</span>}
           <img src="/icons/comment.svg" alt="" width='30px' onClick={() => router.push(`/post/${post.id}`)}/>
           {commentsCount > 0 && <span>{commentsCount}</span>}
-          <img src="/icons/share.svg" alt="" width='30px' onClick={() => handleShare()}/>         
+          <img src="/icons/share.svg" alt="" width='30px' onClick={() => handleShare()}/>
         </div>
     </div>
   )
