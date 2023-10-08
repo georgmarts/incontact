@@ -1,0 +1,70 @@
+@use '../styles/colors';
+
+.message-by-friend, .message-by-user {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 85%;
+    padding: 1rem;
+    font-family: 'VK-Sans-Regular';
+    font-size: .875rem;
+    box-shadow: 0 0 3px -1px black;
+    border-radius: .5rem;
+    flex-shrink: 0;
+    animation: message 300ms;
+    &__header {
+        display: flex;
+        gap: .5rem;
+        align-items: center;
+    }
+    h3 {
+        margin: 0;
+    }
+}
+
+.message-by-user {
+    margin-right: 0;
+    margin-left: auto;
+    background-color: colors.$blue;
+    color: white;
+    a {
+        color: white;
+    }
+    &__options[open] {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
+        width: max-content;
+        border: none;
+        border-radius: 1rem;
+        padding: 2rem;
+        button {
+            width: 120px;
+        }
+        &::backdrop {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    }
+}
+
+@keyframes message {
+    0% { opacity: 0}
+    100% {opacity: 1}
+}
+
+.message-body {
+    overflow: hidden;
+    img {
+        object-fit: contain;
+        width: 100%;
+        overflow: hidden;
+        border-radius: .5rem;
+    }
+    p {
+        margin: .5rem 0 0 .5rem;
+    }
+    a {
+        word-break: break-all;
+    }
+}
