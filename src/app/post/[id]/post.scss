@@ -3,6 +3,7 @@
 .post-page {
     position: relative;
     padding: 1rem;
+    padding-bottom: 90px;
     @include header-padding;
     &__header {
         display: flex;
