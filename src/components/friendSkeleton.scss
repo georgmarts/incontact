@@ -1,0 +1,27 @@
+.friend-skeleton {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: lightgray;
+    border-radius: 1rem;
+    padding: .5rem 1.2rem;
+    div:nth-child(1) {
+        width: 50px;
+        aspect-ratio: 1/1;
+        background-color: rgba(128, 128, 128, 0.4);
+        border-radius: 50px;
+        flex-shrink: 0;
+    }
+    div:nth-child(2) {
+        width: 50ch;
+        height: 1rem;
+        background-color: rgba(128, 128, 128, 0.4);
+    }
+    div:nth-child(3) {
+        width: 3ch;
+        aspect-ratio: 1/1;
+        background-color: rgba(128, 128, 128, 0.4);
+        border-radius: 10px;
+        flex-shrink: 0;
+    }
+}
