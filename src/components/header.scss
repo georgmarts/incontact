@@ -1,0 +1,24 @@
+.header {
+  position: fixed;
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 700px;
+  padding: 1rem;
+  background-color: white;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  box-shadow: 0 0 2px -1px black;
+  img {
+    width: 40px;
+    cursor: pointer;
+  }
+  h3 {
+    margin: 0;
+  }
+}

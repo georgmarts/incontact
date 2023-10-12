@@ -1,0 +1,15 @@
+@import "../../../styles/mixins";
+
+.post-page {
+  position: relative;
+  padding: 1rem;
+  padding-bottom: 90px;
+  @include header-padding;
+  &__header {
+    display: flex;
+    margin: 0 0 1rem 0;
+    img {
+      width: 30px;
+    }
+  }
+}

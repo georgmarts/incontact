@@ -1,0 +1,52 @@
+.profile-header {
+  position: relative;
+  background-image: linear-gradient(180deg, lightgrey, white);
+  padding: 1rem;
+  padding-top: 2rem;
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    font-family: "VK-Sans-Regular";
+    h2 {
+      margin: 0;
+    }
+    p {
+      margin: 0;
+    }
+    img {
+      border: 5px solid white;
+      cursor: pointer;
+    }
+  }
+  &__dots {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: none !important;
+    width: 40px;
+    cursor: pointer;
+  }
+}
+
+.profile-header__options[open] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  // width: 60%;
+  // max-width: 700px;
+  padding: 2rem 3rem;
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+  &::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  button {
+    width: 100%;
+    padding: 1rem;
+  }
+}

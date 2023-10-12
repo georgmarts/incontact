@@ -1,0 +1,18 @@
+@use "../styles/colors";
+
+.custom-button {
+  all: unset;
+  width: max-content;
+  max-width: 150px;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-family: "VK-Sans-DemiBold";
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: transform ease-in-out 100ms;
+  // flex-shrink: 0 !important;
+  &:hover {
+    box-shadow: 1px 1px 3px -1px black;
+  }
+}

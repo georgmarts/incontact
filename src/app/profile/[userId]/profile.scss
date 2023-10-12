@@ -1,0 +1,9 @@
+@use '../../../styles/colors';
+@import '../../../styles/mixins';
+
+.profile-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include header-padding;
+}
