@@ -1,8 +1,0 @@
-@mixin shadow {
-    box-shadow: 1px 1px 3px -1px black;
-    border-radius: 1rem;
-}
-
-@mixin header-padding {
-    padding-top: calc(50px + 2rem)
-}
