@@ -1,0 +1,132 @@
+@use "../styles/colors";
+@import "../styles/mixins";
+
+.extra-info-form__header {
+  position: fixed;
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 700px;
+  padding: 1rem;
+  background-color: white;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  box-shadow: 0 0 2px -1px black;
+  img {
+    width: 40px;
+    cursor: pointer;
+  }
+  h3 {
+    margin: 0;
+  }
+}
+
+.signup-loading {
+  position: absolute;
+  margin: auto;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  img {
+    object-fit: contain;
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+  }
+  h1 {
+    margin: 0;
+  }
+}
+
+.extra-info-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  position: absolute;
+  margin: auto;
+  inset: 0;
+  width: 90%;
+  height: max-content;
+  padding: 2rem 0;
+  @include shadow;
+  background-color: rgba(0, 0, 0, 0.025);
+  font-family: "VK-Sans-Regular";
+  max-width: 700px;
+
+  &__image-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 80%;
+    img {
+      object-fit: cover;
+      overflow: hidden;
+      width: 80%;
+      max-width: 200px;
+      aspect-ratio: 1/1;
+      border-radius: 1rem;
+    }
+  }
+  input {
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 1px 1px 3px -1px grey;
+    background-color: white;
+    font-size: 1rem;
+    font-family: "VK-Sans-Regular";
+    cursor: pointer;
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.5);
+    }
+    &:focus {
+      outline: 1px solid gray;
+    }
+  }
+  span {
+    margin-top: -1rem;
+    font-family: "VK-Sans-Medium";
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 80%;
+    max-width: 300px;
+    padding: 2rem 0;
+    border: 2px dashed colors.$blue;
+    border-radius: 1rem;
+    img {
+      object-fit: contain;
+      overflow: hidden;
+      width: 30%;
+      aspect-ratio: 1/1;
+      cursor: pointer;
+    }
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  //   input[type="date"] {
+  //     &::-webkit-datetime-edit {
+  //       position: absolute;
+  //       top: 2rem !important;
+  //     }
+  //   }
+}
